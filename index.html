@@ -1,34 +1,261 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Availação Semestral - Projeto kick-off frontend</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </head>
-  <body>
-  <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
 
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
+<body>
+    <script src="script.js"></script>
 
-  
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="prof-tab" data-toggle="tab" href="#prof" role="tab" aria-controls="prof"
+                aria-selected="true">Profissional</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="aval-tab" data-toggle="tab" href="#aval" role="tab" aria-controls="aval"
+                aria-selected="true">Avaliação da Empresa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="nome-tab" data-toggle="tab" href="#nome" role="tab" aria-controls="nome"
+                aria-controls="nome" aria-selected="true">Nome do Profissional</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="dado-tab" data-toggle="tab" href="#dado" role="tab" aria-controls="dado"
+                aria-selected="true">Dados do Profissional</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="proc-tab" data-toggle="tab" href="#proc" role="tab" aria-controls="proc"
+                aria-selected="true">Avaliação do Processo</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="prof" role="tabpanel" aria-labelledby="prof-tab">
+            <div id="container container-fluid">
+                <form>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia1">Competência 1</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia1" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia2">Competência 2</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia2" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia2" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia3">Competência 3</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia3" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia3" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia4">Competência 4</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia4" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia4" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia5">Competência 5</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia5" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia5" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia6">Competência 6</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia6" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia6" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia7">Competência 7</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia7" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia7" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia8">Competência 8</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia8" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia8" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia9">Competência 9</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia9" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia9" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia10">Competência 10</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia10" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia10" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia11">Competência 11</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia11" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia11" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="competencia12">Competência 12</label>
+                        <input class="col-md-1" type="text" class="form-control" id="competencia12" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="competencia12" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="media">Média</label>
+                        <input class="col-md-1" type="text" class="form-control" id="media" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="media" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Evolução de Desempenho</label>
+                        <input class="col-md-1" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                        <input class="col-md-1" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade show " id="aval" role="tabpanel" aria-labelledby="aval-tab">
+            <div id="container container-fluid">
+                <form>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Avaliação 1</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Avaliação 2</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Avaliação 3</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Avaliação 4</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Avaliação 5</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Avaliação 6</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade show " id="nome" role="tabpanel" aria-labelledby="nome-tab">
+            <div id="container container-fluid">
+                <form>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleFormControlSelect1">Nome do Profissional</label>
+                        <select class="form-control col-md-6" id="exampleFormControlSelect1">
+                            <option>Rodrigo</option>
+                            <option>José</option>
+                            <option>João</option>
+                            <option>Pedro</option>
+                            <option>Adailton</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade show " id="dado" role="tabpanel" aria-labelledby="dado-tab">
+            <div id="container">
+                <form>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Cargo/Função</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Equipe</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Cidade</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2" for="exampleInputtext1">Data Avaliação</label>
+                        <input class="col-md-3" type="text" class="form-control" id="exampleInputtext1" placeholder="">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade show " id="proc" role="tabpanel" aria-labelledby="proc-tab">
+            <div id="container">
+                <form>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Ruim
+                        </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Normal
+                        </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Boa
+                        </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Muito Boa
+                        </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Excelente
+                        </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Ruim
+                        </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Normal
+                        </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Boa
+                        </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Muito Boa
+                        </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Excelente
+                        </label>
+                      </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="form-row">
+          <button type="button" class="btn btn-success">Salvar</button>
+          <button type="button" class="btn btn-danger">Cancelar</button>
+        </div>
+      </nav>
+    </div>
+    
+</body>
 
-  </body>
 </html>
